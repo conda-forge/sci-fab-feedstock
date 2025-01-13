@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sci-fab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sci-fab-{{ version }}.tar.gz
   sha256: 787dd4bc55e7910706c5c1a615d2dbf38d93d697aacf8f9b336644a050f3126f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - fab=fab.cli:cli_fab
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<4.0
+    - python {{ python_min }}
   run:
     - fparser
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - fab --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Metomi/fab
