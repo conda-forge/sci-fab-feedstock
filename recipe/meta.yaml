@@ -11,7 +11,7 @@ source:
   sha256: 2e38f03c97702af8136cadf5c03c9b0903efd9f4456952c2eeac6a3f7bf55a6a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - fab=fab.cli:cli_fab
@@ -24,7 +24,7 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - fparser
+    - fparser >= 0.2
     - python >={{ python_min }},<4.0
 
 test:
