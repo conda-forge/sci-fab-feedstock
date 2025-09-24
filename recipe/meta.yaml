@@ -24,7 +24,7 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - fparser >= 0.2
+    - fparser >=0.2
     - python >={{ python_min }},<4.0
 
 test:
