@@ -148,4 +148,3 @@ Feedstock Maintainers
 * [@MatthewHambley](https://github.com/MatthewHambley/)
 * [@t00sa](https://github.com/t00sa/)
 * [@yaswant](https://github.com/yaswant/)
-
