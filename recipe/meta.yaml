@@ -14,7 +14,7 @@ build:
   number: 1
   noarch: python
   entry_points:
-    - fab=fab.cli:cli_fab
+    - fab=fab.cui.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
