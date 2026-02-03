@@ -43,7 +43,7 @@ about:
   summary: Build system for scientific software
   dev_url: https://github.com/metomi/fab/
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file: LICENCE
 
 extra:
   recipe-maintainers:
