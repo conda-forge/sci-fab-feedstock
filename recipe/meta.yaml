@@ -1,5 +1,5 @@
 {% set name = "sci-fab" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0d792b8352479411501c2fc6a2b1c3dfcac6b5ee40cfd43c7de32a74eb01c557
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 8dda3010a02fc9e9593401d06a85b275118d4e00feb604019d3a2a6ed7b8ae36
 
 build:
   number: 0
